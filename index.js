@@ -127,7 +127,7 @@ function moveDodger(e) {
    */
    if (e.which === LEFT_ARROW) {
      moveDodgerLeft();
-     window.requestAnimationFrame(movedodgerLeft);
+     window.requestAnimationFrame(moveDodgerLeft);
      e.preventDefault();
      e.stopPropagation();
     // window.requestAnimationFrame(movedodgerLeft);
