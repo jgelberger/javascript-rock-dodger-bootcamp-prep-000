@@ -173,7 +173,6 @@ function moveDodgerRight() {
   }
   window.requestAnimationFrame(drip);
 }
-}
 
 /**
  * @param {string} p The position property
