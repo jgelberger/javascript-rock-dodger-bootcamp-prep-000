@@ -167,7 +167,6 @@ function moveDodgerRight() {
     if (right > 360) {
       DODGER.style.left = `${right + 4}px`;
     }
-    window.requestAnimationFrame(drip);
   }
   window.requestAnimationFrame(drip);
 }
