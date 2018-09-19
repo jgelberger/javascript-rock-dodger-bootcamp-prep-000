@@ -140,7 +140,39 @@ function moveDodger(e) {
    }
 }
 
+function moveDodgerLeft() {
+  // implement me!
+  /**
+   * This function should move DODGER to the left
+   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
+   */
+ 
+   
+   
+   
+  function drop() {
+    var left = positionToInteger(DODGER.style.left);
+    if (left > 0) {
+     DODGER.style.left = `${left - 4}px`;
+    }
+  }
+  window.requestAnimationFrame(drop);
+}
 
+function moveDodgerRight() {
+  // implement me!
+  /**
+   * This function should move DODGER to the right
+   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
+   */
+  function drip() {
+    var right = positionToInteger(DODGER.style.left);
+    if (right < 360) {
+      DODGER.style.left = `${right + 4}px`;
+    }
+  }
+  window.requestAnimationFrame(drip);
+}
 
 /**
  * @param {string} p The position property
